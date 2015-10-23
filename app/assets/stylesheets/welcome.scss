@@ -1,0 +1,158 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
+//----------------------Navbar-------------------------
+.container-fluid{
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.navbar-brand{
+    font-family: 'Josefin Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand:hover, 
+.navbar-inverse .navbar-brand:focus{
+	color: #049DBF;
+}
+
+
+.navbar-nav{
+    font-family: 'Josefin Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+.navbar-inverse .navbar-nav>li>a:hover, 
+.navbar-inverse .navbar-nav>li>a:focus{
+	color: #049DBF;
+}
+//--------------------END Navbar-------------------------
+
+//--------------------Flex Containers---------------------
+.flex-container-welcome{
+    width: 100vw;
+    height: 100vh;
+
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.welcome-text{
+    color: white;
+    z-index: 2;
+
+    h2{
+        font-family: Pacifico, italic;
+        text-transform: uppercase;
+        font-size: 20px;
+        text-align: center;
+    }
+    h1{
+        font-family: Pacifico;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 72px;
+        text-align: center;
+    }
+    h3{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: right;
+    }
+}
+//--------------------END Flex Containers-----------------
+
+//--------------------Icons------------------------------
+.social-links li{
+    display: inline-block;
+    padding-right: 40px;
+}
+
+.social-links a>i{
+    color: white;
+}
+.social-links .fa-facebook-square:hover,
+.social-links .fa-facebook-square:focus,
+.social-links .fa-twitter-square:hover,
+.social-links .fa-twitter-square:focus,
+.social-links .fa-instagram:hover,
+.social-links .fa-instagram:focus{
+    color: #0E11F2;
+}
+//--------------------END Icons--------------------------
+
+//--------------------Carousel---------------------------
+#myCarousel{
+	width: 100vw;
+	height: 100vh;
+    background-color: #049DBF;
+    z-index: 1;
+
+	.carousel-inner img{
+		height: 100vh;
+		width: 100vw;
+	}
+    .carousel-indicators .active{
+        background-color: #0E11F2;
+    }
+    .carousel-indicators li{
+        background-color: white;
+    }
+}
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+        
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 1;
+    }
+}
+//----------------------END Carousel---------------------
+
