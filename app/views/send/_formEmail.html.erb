@@ -1,0 +1,25 @@
+<form class="form-horizontal" role="form">
+
+	<%flash[:notice] %>
+	<%=form_tag send_path, method: :post do %>
+	<div class="form-group">
+		<input type="name" class="form-control" id="name" placeholder="Ingrese su Nombre">
+		<%text_field_tag(:name)%>
+	</div>
+
+	<div class="form-group">
+		<input type="email" class="form-control" id="email" placeholder="Ingrese su Correo Electrónico">
+		<%text_field_tag(:email)%>
+	</div>
+
+	<div class="form-group">
+		<textarea type="message" class="form-control" rows="6" id="message" placeholder="Ingrese su Mensaje"></textarea>
+		<%text_area_tag(:message)%>
+	</div>
+
+	<p>
+		<button type="submit" class="btn btn-info btn-block" id="submit">Enviar</button>
+		<%submit_tag(:submit)%>
+	</p>
+<% end %>
+</form>

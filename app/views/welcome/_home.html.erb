@@ -1,8 +1,8 @@
-<section>
+<div id="first-home">
   <div class="flex-container-welcome">
-    <div class="welcome-text">
+    <div class="welcome-text animated zoomInDown">
       <h2>electrificaciones</h2>
-      <h1>diasan f.p.</h1>
+      <h1>diasan</h1>
       <h3>RIF: V-07388928-2</h3>
       <ul class="social-links text-center">
         <li>
@@ -33,21 +33,26 @@
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
 
     <div class="carousel-inner" role="listbox">
       <div class="item active">
+        <%= image_tag("ciudad1.jpg")%>
+      </div>
+
+      <div class="item">
         <%= image_tag("torres1.jpg")%>
+      </div>
+
+      <div class="item">
+        <%= image_tag("distribucion1.jpg")%>
       </div>
 
       <div class="item">
         <%= image_tag("servicios1.jpg")%>
       </div>
-
-      <div class="item">
-        <%= image_tag("cables.jpg")%>
-      </div>
     </div>
 
  </div>
-</section>
+</div>

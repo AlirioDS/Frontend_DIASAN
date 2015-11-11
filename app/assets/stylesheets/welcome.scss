@@ -5,50 +5,54 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Vast+Shadow);
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
 
-//----------------------Navbar-------------------------
-.container-fluid{
+//----------------------NAVIGATION-------------------------
+
+.navbar>.container-fluid{
     padding-right: 20px;
     padding-left: 20px;
     margin-right: 5%;
     margin-left: 5%;
 }
+
 .navbar-brand{
     font-family: 'Josefin Sans', sans-serif;
-	text-transform: uppercase;
-	font-size: 24px;
-	font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .navbar-inverse .navbar-brand {
     color: white;
 }
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus{
+    color: #049DBF;
+}
+
 .navbar-inverse .navbar-nav > li > a {
     color: white;
 }
 
-.navbar-inverse .navbar-brand:hover, 
-.navbar-inverse .navbar-brand:focus{
-	color: #049DBF;
-}
-
-
 .navbar-nav{
     font-family: 'Josefin Sans', sans-serif;
-	text-transform: uppercase;
-	font-size: 18px;
+    text-transform: uppercase;
+    font-size: 18px;
 }
-.navbar-inverse .navbar-nav>li>a:hover, 
-.navbar-inverse .navbar-nav>li>a:focus{
-	color: #049DBF;
-}
-//--------------------END Navbar-------------------------
 
-//--------------------Flex Containers---------------------
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus{
+    color: #049DBF;
+}
+//--------------------END navigation--------------
+
+//--------------------Home------------------------
 .flex-container-welcome{
-    width: 100vw;
+
+    width: 100%;
     height: 100vh;
 
     display: -webkit-flex;
@@ -65,18 +69,24 @@
     z-index: 2;
 
     h2{
-        font-family: Pacifico, italic;
+        font-family: Vast Shadow;
+        text-shadow: -3px 0 #049DBF, 0 3px #049DBF, 0 3px #049DBF, 0 -3px #049DBF;
         text-transform: uppercase;
         font-size: 20px;
         text-align: center;
     }
+
     h1{
-        font-family: Pacifico;
+        font-family: Vast Shadow;
+        text-shadow: -3px 0 #049DBF, 0 3px #049DBF, 0 3px #049DBF, 0 -3px #049DBF;
         font-weight: bold;
         text-transform: uppercase;
         font-size: 72px;
         text-align: center;
+
+
     }
+        
     h3{
         font-family: 'Josefin Sans', sans-serif;
         font-weight: bold;
@@ -84,32 +94,40 @@
         text-align: right;
     }
 }
-//--------------------END Flex Containers-----------------
 
-//--------------------Icons------------------------------
 .social-links li{
     display: inline-block;
     padding-right: 40px;
 }
 
-.social-links a>i{
-    color: white;
+.social-links li a{
+    color: black;
+    background-color: white;//rgba(0,0,0,0.9);
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    line-height: 36px;
+    display: block;
+    font-size: 16px;
+    opacity: 1;
 }
 .social-links .fa-facebook-square:hover,
-.social-links .fa-facebook-square:focus,
+.social-links .fa-facebook-square:focus{
+    color: #3a5795;
+}
 .social-links .fa-twitter-square:hover,
-.social-links .fa-twitter-square:focus,
+.social-links .fa-twitter-square:focus{
+    color: #55acee;
+}
 .social-links .fa-instagram:hover,
 .social-links .fa-instagram:focus{
-    color: #0E11F2;
+    color: #ac9a81;
 }
-//--------------------END Icons--------------------------
 
-//--------------------Carousel---------------------------
 #myCarousel{
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
-    background-color: #049DBF;
+    background-color: black;
     z-index: 1;
 
 	.carousel-inner img{
@@ -117,7 +135,7 @@
 		width: 100vw;
 	}
     .carousel-indicators .active{
-        background-color: #0E11F2;
+        background-color: #049DBF;
     }
     .carousel-indicators li{
         background-color: white;
@@ -154,5 +172,310 @@
         z-index: 1;
     }
 }
-//----------------------END Carousel---------------------
+//----------------------END Home--------------------
 
+//----------------------Products--------------------
+
+.flex-text{
+    padding: 25px;
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+.flex-img{
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 1;
+    -webkit-box-flex: 2;
+    -moz-box-flex: 2;
+    -webkit-flex: 2 0 auto;
+    -ms-flex: 2 0 auto;
+    flex: 2 0 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+#action-list{
+    display: flex;
+    background-image: linear-gradient(to bottom, cadetblue, #049DBF);
+    width: 100%;
+    height: 100vh;
+    transition: .7s;
+    overflow: hidden;
+
+        .action-item{
+            flex: 1;
+            transition: 1.2s;  
+        }
+        .action-item:hover {
+            flex: 3;
+        }
+        .action-item:first-child {
+            background: rgba(0,0,0,.4);
+        }
+        .action-item:nth-child(2) {
+            background: rgba(0,0,0,.2);
+        }
+        .action-item:nth-child(3) {
+            background: rgba(0,0,0,0);
+        }
+
+@media (max-width:400px) {
+    section {flex-direction: column;}
+}
+
+
+}
+
+.flex-img{
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+
+.flex-text>h2{
+    padding: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: white;
+}
+.flex-img>p{
+    padding: 35px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+//----------------------END Products----------------
+
+//----------------------Services--------------------
+
+.industrial-descripcion{
+    margin: 0 0 10px 0;
+}
+.business-description{
+    margin: 10px 0 10px 0;
+}
+.domiciliary-description{
+    margin: 10px 0 10px 0;
+}
+
+.img-responsive{
+    max-width: 85%;
+}
+
+#services-tittle{
+
+    .container-fluid>h1{
+
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 35px;
+    }
+}
+
+.services-description{
+
+    .page-header>h2{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .fonts-description>p{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 18px;
+    }
+}
+//--------------------END Services------------------
+
+//--------------------Us----------------------------
+#us {
+    margin: 20px 0 20px 0;
+}
+
+.conten-sm{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #049DBF;
+}
+
+.qualities{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.description {
+    text-align: center;
+
+    h3{
+        color: white;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    p{
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+}
+
+.qualities-description {
+    text-align: center;
+
+    h3{
+        color: #049DBF;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+//------------------END Us--------------------------
+
+//-----------------Contact--------------------------
+#contact{
+
+    header>h1{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 35px;
+    }
+
+    header>p{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 25px;
+    }
+
+    .industry-name{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+    address{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 18px;
+    }
+
+    .gray-background{
+        background-color: #f2f2f2;
+    }
+
+    .padding-top{
+        padding: 60px 0;
+    }
+
+    .header-contact{
+        margin-bottom: 40px;
+    }
+
+    .btn-info{
+        font-family: 'Josefin Sans', sans-serif;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 12px 23px;
+        display: inline-block;
+        margin: 0 10px 10px 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 300;
+        outline: none;
+        position: relative;
+        color: #fff;
+        border-radius: 5px;
+        -webkit-transition: all .3s ease-out;
+        -moz-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+    }
+
+    .btn-block{
+        display: block;
+        width: 100%;
+    }
+}
+//---------------END Contact------------------------
+
+//---------------Main-Footer------------------------
+footer{
+    background-color: #022859;
+    color: white;
+}
+.socials{
+    p1{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    p2{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 15px;
+    }
+}
+.socials{
+    padding: 20px 20px 10px 20px;
+    text-align: center;
+}
+
+.socials ul{
+    padding: 0;
+}
+
+.social-footer li{
+    text-align: center;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.social-footer li a{
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 3px;
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    display: block;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.social-footer .twitter:hover,
+.social-footer .twitter:focus,{
+    background-color: #55acee;
+}
+
+.social-footer .google-plus:hover,
+.social-footer .google-plus:focus,{
+    background-color: #ea4335;
+}
+
+.social-footer .github:hover,
+.social-footer .github:focus,{
+    background-color: #6b808d;
+}
+//-------------END Main-Footer----------------------
