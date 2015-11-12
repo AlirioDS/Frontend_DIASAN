@@ -24,10 +24,7 @@ test:
  timeout: 5000
 
 production:
- host: postgres://irhnfcygugaygf:QfqZhr5vITbL2UcvZj8HPTL1f-@ec2-54-204-0-120.compute-1.amazonaws.com:5432/dvhkrtlmvngo8
  adapter: postgresql
  encoding: unicode
- username: irhnfcygugaygf
- database: dvhkrtlmvngo8
- password: QfqZhr5vITbL2UcvZj8HPTL1f-
+ database: 
  pool: 5
