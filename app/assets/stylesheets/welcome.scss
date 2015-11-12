@@ -175,94 +175,74 @@
 //----------------------END Home--------------------
 
 //----------------------Products--------------------
-
-.flex-text{
-    padding: 25px;
-    -webkit-box-ordinal-group: 1;
-    -moz-box-ordinal-group: 1;
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-    -webkit-box-flex: 0;
-    -moz-box-flex: 0;
-    -webkit-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
-    align-self: auto;
-}
-
-.flex-img{
-    -webkit-box-ordinal-group: 1;
-    -moz-box-ordinal-group: 1;
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 1;
-    -webkit-box-flex: 2;
-    -moz-box-flex: 2;
-    -webkit-flex: 2 0 auto;
-    -ms-flex: 2 0 auto;
-    flex: 2 0 auto;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
-    align-self: auto;
-}
-
-#action-list{
-    display: flex;
-    background-image: linear-gradient(to bottom, cadetblue, #049DBF);
-    width: 100%;
-    height: 100vh;
-    transition: .7s;
-    overflow: hidden;
-
-        .action-item{
-            flex: 1;
-            transition: 1.2s;  
-        }
-        .action-item:hover {
-            flex: 3;
-        }
-        .action-item:first-child {
-            background: rgba(0,0,0,.4);
-        }
-        .action-item:nth-child(2) {
-            background: rgba(0,0,0,.2);
-        }
-        .action-item:nth-child(3) {
-            background: rgba(0,0,0,0);
-        }
-
-@media (max-width:400px) {
-    section {flex-direction: column;}
-}
-
-
-}
-
-.flex-img{
-    padding-right: 70px;
-    padding-left: 70px;
-}
-
-
-.flex-text>h2{
-    padding: 25px;
-    font-family: 'Josefin Sans', sans-serif;
-    text-transform: uppercase;
-    font-size: 25px;
-    color: white;
-}
-.flex-img>p{
-    padding: 35px;
+.header h2{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-    color: white;
+    text-transform: uppercase;
+    font-size: 35px;
 }
 
+.header p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 21px;
+    margin-bottom: 60px;
+}
+
+.img-zoom{
+    border-radius: 100%;
+    width: 350px;
+    z-index: 1;
+    -webkit-transition: all .15s ease-out 0s;
+    -moz-transition: all .15s ease-out 0s;
+    -ms-transition: all .15s ease-out 0s;
+    -o-transition: all .15s ease-out 0s;
+    transition: all .15s cubic-bezier(0, 0, 0.04, 1.2) 0s;
+    box-shadow: 0 4px 9px 0 rgba(0,0,0,.4);
+    margin-bottom: 25px;
+    border: 7px solid #049DBF;
+}
+.img-zoom:hover{
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    -o-transform:scale(1.25);
+    transform: scale(1.25);
+}
+
+.fonts article h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 19px;
+    margin: 12px 0 13px;
+}
+.fonts article p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    color: #8A8A8A;
+    margin-bottom: 15px;
+}
+.padding-top-bottom{
+    padding-top: 25px;
+    padding-bottom: 45px;
+}
+
+
+.bg-dark{
+    background-color: #202020;
+
+    h2{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 35px;
+        color: white;
+    }
+
+    p{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 21px;
+        color: white;
+    }
+}
 //----------------------END Products----------------
 
 //----------------------Services--------------------
@@ -272,16 +252,18 @@
 }
 .business-description{
     margin: 10px 0 10px 0;
+
 }
 .domiciliary-description{
     margin: 10px 0 10px 0;
 }
 
-.img-responsive{
-    max-width: 85%;
+#main-service .img-responsive{
+    max-width: 75%;
 }
 
 #services-tittle{
+    padding: 15px 0 10px 0;
 
     .container-fluid>h1{
 
@@ -319,7 +301,7 @@
 }
 
 .qualities{
-    padding-top: 80px;
+    padding-top: 90px;
     padding-bottom: 80px;
 }
 
@@ -385,9 +367,12 @@
     }
 
     .padding-top{
-        padding: 60px 0;
+        padding-top: 60px;
     }
 
+    .padding-bottom{
+        padding-bottom: 100px;
+    }
     .header-contact{
         margin-bottom: 40px;
     }

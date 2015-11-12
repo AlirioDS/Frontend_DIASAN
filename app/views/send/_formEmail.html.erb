@@ -9,6 +9,15 @@
 	<%=email_field_tag(:email, nil, placeholder: "Ingrese su Email", class: "form-control")%>
 </div>
 
+<div class="form-group text-center">
+	<%= radio_button("post", "category", "Cotizacion")%>
+	<%= label_tag(:matter, "Presupuestos")%>
+	<%= radio_button("post", "category", "Proyecto")%>
+	<%= label_tag(:matter, "Proyectos")%>
+	<%= radio_button("post", "category", "Otros")%>
+	<%= label_tag(:matter, "Otros")%>
+</div>
+
 <div class="form-group">
 	<%=text_area_tag(:message, nil, placeholder: "Ingrese su Mensaje", class: "form-control")%>
 </div>
