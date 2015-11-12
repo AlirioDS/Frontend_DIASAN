@@ -26,6 +26,7 @@ test:
 production:
  adapter: postgresql
  encoding: unicode
- database: webfront
- password:
+ username: irhnfcygugaygf
+ database: dvhkrtlmvngo8
+ password: QfqZhr5vITbL2UcvZj8HPTL1f-
  pool: 5
