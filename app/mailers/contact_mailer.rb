@@ -1,7 +1,8 @@
 class ContactMailer < ApplicationMailer
-	default from: "Web DIASAN <contacto@diasan.com"
+	default from: "electrificacionesdiasan@gmail.com"
 
-	def contact_send(params) @parameters=params
-		mail(to'electrificacionesdiasan@gmail.com',subject:@parameters["Contacto Página"])
+	def contact_send(params)
+		@params= params
+		mail(to: "electrificacionesdiasan@gmail.com",subject: "AVISO")
 	end
 end

@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
-  get 'send/index'
-  get 'send' => 'send#index'
   post 'send' => 'send#create'
-
-  get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
