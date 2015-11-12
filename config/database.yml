@@ -26,6 +26,6 @@ test:
 production:
  adapter: postgresql
  encoding: unicode
- database: 
+ database: webfront
+ password:
  pool: 5
- timeout: 5000
