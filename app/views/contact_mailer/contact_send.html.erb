@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
- <meta http-equiv=”Content-Type” content=”text/html; charset=utf-8">
- <title>form Contact</title>
- <style type=”text/css”>
- body, td { color:#000000; font-size:14px; font-family:Verdana,Helvetica,Arial; }
- .divider { background-color:#555555; height:2px; }
- #footer { font-size:11px; color:#555555; }
- #footer a { color:#555555;}
- </style>
-</head>
-<body>
-<table width=”100%” id=”background” border=”0" cellpadding=”0" cellspacing=”0">
- <tr><td align=”center” valign=”top”>
- <table width=”650" id=”main” border=”0" cellpadding=”0" cellspacing=”20">
- <tr>
- <td colspan=”2"><h1>DIASAN FP</h1></td>
- </tr>
- <tr>
- <td class=”divider” colspan=”2" bgcolor=”#555555" height=”2"></td>
- </tr>
- <tr>
- <h1>Cordial Saludo</h1>
- </tr>
- <tr>
- <td class=”divider” colspan=”2" bgcolor=”#555555" height=”2"></td>
- </tr>
- <tr>
- <td colspan=”2">
- <p><%= @params[:message] %></p>
- <hr/>
- <p>Atentamente: <%= @params[:name]%></p>
- <p>email: <%= @params[:email]%></p>
- </td>
- </tr>
- <tr>
- <td class=”divider” colspan=”2" bgcolor=”#555555" height=”2"></td>
- </tr>
- <tr>
- <td id=”footer” colspan=”2" align=”center”>
- <p>&copy;2015 Miguel Casas</p>
- </td>
- </tr>
- </table>
-</td></tr>
-</table>
-</body>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<style>
+
+		h1{
+			font-size: 24px;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+
+		p{
+			font-size: 18px;
+		}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<div>
+			<h1>Asunto:</h1>
+			<p> <%= @params[:advise] %></p>
+		</div>
+
+		<div>
+			<h1>Mensaje:</h1>
+			<p> <%= @params[:message] %></p>
+		</div>
+
+		<div>
+			<h1>Nombre:</h1>
+			<p> <%= @params[:name] %></p>
+		</div>
+
+		<div>
+			<h1>Email:</h1>
+			<p> <%= @params[:email] %></p>
+		</div>
+
+	</body>
+
 </html>

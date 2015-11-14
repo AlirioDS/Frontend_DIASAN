@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <%=favicon_link_tag 'FAVICON.png'%>
   <title>Diasan F.P.</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -13,11 +14,6 @@
 	
 	<%= yield %>
 
-  <script>
-   $(document).ready(function(){
-    $('#navigation-home').onePageNav();
-    });
-   </script>
    <script>
    $(document).ready(function(){
     $('#navigation-bar').onePageNav();

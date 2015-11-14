@@ -11,17 +11,13 @@
 //----------------------NAVIGATION-------------------------
 
 .navbar>.container-fluid{
-    padding-right: 20px;
-    padding-left: 20px;
     margin-right: 5%;
     margin-left: 5%;
 }
 
 .navbar-brand{
-    font-family: 'Josefin Sans', sans-serif;
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: bold;
+    margin-top: -12px;
+    vertical-align: middle;
 }
 
 .navbar-inverse .navbar-brand {
@@ -54,6 +50,7 @@
 
     width: 100%;
     height: 100vh;
+    z-index: 11;
 
     display: -webkit-flex;
     display:         flex;
@@ -66,7 +63,6 @@
 
 .welcome-text{
     color: white;
-    z-index: 2;
 
     h2{
         font-family: Vast Shadow;
@@ -124,11 +120,27 @@
     color: #ac9a81;
 }
 
+.light-typo{
+    color: #fff;
+}
+
+.overlay-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+    background-color: #000;
+    z-index: 10;
+}
+
 #myCarousel{
+    position: relative;
+    overflow: hidden;
 	width: 100%;
 	height: 100vh;
     background-color: black;
-    z-index: 1;
 
 	.carousel-inner img{
 		height: 100vh;
@@ -189,8 +201,9 @@
 }
 
 .img-zoom{
-    border-radius: 100%;
-    width: 350px;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
     z-index: 1;
     -webkit-transition: all .15s ease-out 0s;
     -moz-transition: all .15s ease-out 0s;
@@ -198,20 +211,22 @@
     -o-transition: all .15s ease-out 0s;
     transition: all .15s cubic-bezier(0, 0, 0.04, 1.2) 0s;
     box-shadow: 0 4px 9px 0 rgba(0,0,0,.4);
-    margin-bottom: 25px;
-    border: 7px solid #049DBF;
+    margin-bottom: 25px; 
+    border: 6px solid #049DBF;
 }
+
 .img-zoom:hover{
-    -webkit-transform:scale(1.25);
+    -webkit-transform:scale(1.5);
     -moz-transform:scale(1.25);
     -ms-transform:scale(1.25);
     -o-transform:scale(1.25);
-    transform: scale(1.25);
+    transform: scale(1.5);
 }
 
 .fonts article h3{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 19px;
+    text-transform: uppercase;
     margin: 12px 0 13px;
 }
 .fonts article p{
@@ -221,13 +236,18 @@
     margin-bottom: 15px;
 }
 .padding-top-bottom{
-    padding-top: 25px;
-    padding-bottom: 45px;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
+.img-banner{
+    background-image: url(electricidad1.jpg);
+    background-position: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 
-.bg-dark{
-    background-color: #202020;
+.fonts{
 
     h2{
         font-family: 'Josefin Sans', sans-serif;
@@ -291,16 +311,18 @@
 
 //--------------------Us----------------------------
 #us {
-    margin: 20px 0 20px 0;
+    margin-top: 20px;
 }
 
 .conten-sm{
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 50px;
     background: #049DBF;
 }
 
 .qualities{
+    background-image: url(banners-qualities1.png);
+    background-size: cover;
     padding-top: 90px;
     padding-bottom: 80px;
 }
@@ -314,23 +336,31 @@
         font-size: 25px;
         font-weight: bold;
         text-transform: uppercase;
+        padding-bottom: 15px;
     }
     p{
         color: white;
-        text-transform: uppercase;
+        text-align: justify;
         font-family: 'Josefin Sans', sans-serif;
+        font-size: 18px;
     }
 }
+
+
 
 .qualities-description {
     text-align: center;
 
     h3{
-        color: #049DBF;
+        color: white;
         font-family: 'Josefin Sans', sans-serif;
         font-size: 25px;
         font-weight: bold;
         text-transform: uppercase;
+    }
+
+    i{
+        color: white;
     }
 }
 //------------------END Us--------------------------
@@ -345,7 +375,7 @@
         font-size: 35px;
     }
 
-    header>p{
+    .header-text{
         font-family: 'Josefin Sans', sans-serif;
         font-size: 25px;
     }
@@ -367,11 +397,11 @@
     }
 
     .padding-top{
-        padding-top: 60px;
+        padding-top: 45px;
     }
 
     .padding-bottom{
-        padding-bottom: 100px;
+        padding-bottom: 80px;
     }
     .header-contact{
         margin-bottom: 40px;
@@ -423,7 +453,7 @@ footer{
     }
 }
 .socials{
-    padding: 20px 20px 10px 20px;
+    padding: 10px 20px 5px 20px;
     text-align: center;
 }
 
