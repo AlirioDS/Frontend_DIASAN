@@ -5,9 +5,6 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import url(https://fonts.googleapis.com/css?family=Vast+Shadow);
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
-
 //----------------------NAVIGATION-------------------------
 
 .navbar>.container-fluid{
@@ -45,8 +42,8 @@
 }
 
 .navbar-fixed{
-    border-top: 50px solid transparent;
     margin-top: -50px;
+    border-top: 50px solid transparent;
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding;
     background-clip: padding-box;
