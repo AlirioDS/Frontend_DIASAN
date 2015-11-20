@@ -1,61 +1,79 @@
 <div id="main-service">
 
-  <div class="container">
+  <div class="container-fluid">
 
     <div id="services-tittle">  
       <div class="container-fluid text-center fadeInDown animated">
         <h1>Servicios</h1>
       </div>
+
     </div>
 
+    <div class="container service-bottom">
 
-      <div class="container-fluid services-description center-block">
+      <div class="row">
 
-        <div class="industrial-description center-block animated rotateIn">
-          <div class="row">
-            <div class="col-sm-4 col-md-4 img-industrial">
-              <%= image_tag("torres2.jpg", :class => "img-responsive img-rounded")%>
-            </div>
-            <div class="col-sm-8 col-md-8 fonts-description">
-              <div class="page-header">
-                <h2>Industriales</h2>
-              </div>
-              <p>Esto es un parrafo descriptivo de lo industrial</p>
+        <div class="col-md4 col-sm-4 col-xs-12 ">
+          <div class="vista">
+            <%= image_tag("torres2.jpg", class: "img-responsive img-rounded")%>
+            <div class="mascara">
+              <h2>Industrial</h2>
             </div>
           </div>
         </div>
 
-
-        <div class="business-description center-block animated rotateIn">
-          <div class="row">
-            <div class="col-sm-4 img-business">
-              <%= image_tag("comercial-mall.jpg", :class => "img-responsive img-rounded")%>
-            </div>
-            <div class="col-sm-8 fonts-description ">
-              <div class="page-header">
-                <h2>Comercial</h2>
-              </div>
-              <p>Esto es un parrafo descriptivo de lo Comercial</p>
+        <div class="col-md4 col-sm-4 col-xs-12 ">
+          <div class="vista">
+            <%= image_tag("comercial-mall.jpg", class: "img-responsive img-rounded center-block")%>
+            <div class="mascara">
+              <h2>Comercial</h2>
             </div>
           </div>
         </div>
 
-
-        <div class="domiciliary-description center-block animated rotateIn">
-          <div class="row">
-            <div class="col-sm-4 img-domiciliary">
-              <%= image_tag("domiciliaria.jpg", :class => "img-responsive img-rounded")%>
-            </div>
-            <div class="col-sm-8 fonts-description ">
-              <div class="page-header">
-                <h2>Domiciliario</h2>
-              </div>
-              <p>Esto es un parrafo descriptivo de lo Domiciliario</p>
+        <div class="col-md4 col-sm-4 col-xs-12 ">
+          <div class="vista">
+            <%= image_tag("domiciliaria.jpg", class: "img-responsive img-rounded center-block")%>
+            <div class="mascara">
+              <h2>Domestico</h2>
             </div>
           </div>
         </div>
 
       </div>
+
+    </div>
+
+  </div>
+
+  <div id="multimedia-text">  
+      <div class="container-fluid text-center fadeInDown animated">
+        <h3>Galeria de imagenes</h3>
+      </div>
+  </div>
+
+  <div id="multimedia-view">
+
+    <div class="container-fluid">
+
+      <div class="row">
+
+        <div id="owl-demo" class="owl-carousel">
+          <div><%= image_tag("biblioteca1.jpg", :class => "img-rounded img-responsive item")%></div>
+          <div><%= image_tag("biblioteca2.jpg", :class => "img-rounded img-responsive item")%></div>
+          <div><%= image_tag("biblioteca3.jpg", :class => "img-rounded img-responsive item")%></div>
+          <div><%= image_tag("biblioteca4.jpg", :class => "img-rounded img-responsive item")%></div>
+          <div><%= image_tag("biblioteca5.jpg", :class => "img-rounded img-responsive item")%></div>
+          <div><%= image_tag("biblioteca6.jpg", :class => "img-rounded img-responsive item")%></div>
+          <div><%= image_tag("biblioteca7.jpg", :class => "img-rounded img-responsive item")%></div>
+          <div><%= image_tag("biblioteca8.jpg", :class => "img-rounded img-responsive item")%></div>
+          <div><%= image_tag("biblioteca9.jpg", :class => "img-rounded img-responsive item")%></div>
+          <div><%= image_tag("biblioteca10.jpg", :class => "img-rounded img-responsive item")%></div>
+        </div>
+
+      </div>
+
+    </div>
 
   </div>
 
