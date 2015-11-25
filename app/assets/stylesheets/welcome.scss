@@ -297,10 +297,12 @@
 .service-bottom{
     padding-bottom: 15px;
 }
+
 .vista {
+    margin: 0 40px 0 0;
     width: 350px;
     height: 250px;
-    float: center;
+    float: left;
     overflow: hidden;
     position: relative;
     text-align: center;
