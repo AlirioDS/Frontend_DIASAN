@@ -39,8 +39,7 @@
     font-size: 18px;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-nav>li>a:focus{
+.navbar-inverse .navbar-nav>li>a:hover{
     color: #049DBF;
 }
 
@@ -50,6 +49,10 @@
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding;
     background-clip: padding-box;
+}
+
+#navigation-bar .current>a{
+    color: #049DBF;
 }
 //--------------------END navigation--------------
 
@@ -101,7 +104,8 @@
 
 .social-links li{
     display: inline-block;
-    padding-right: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .social-links li a{
@@ -297,7 +301,7 @@
     margin: 0 auto;
     width: 350px;
     height: 250px;
-    float: left;
+    float: center;
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -381,6 +385,34 @@
     -o-transition-delay: 0.5s;
     -ms-transition-delay: 0.5s;
     transition-delay: 0.5s;
+}
+
+@media only screen and (max-width: 700px){
+    .vista .mascara { 
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.vista h2 { 
+    -webkit-transform: translateY(0px); 
+    -moz-transform: translateY(0px); 
+    -o-transform: translateY(0px); 
+    -ms-transform: translateY(0px); 
+    transform: translateY(0px); 
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay: 0.5s;
+    -o-transition-delay: 0.5s;
+    -ms-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
 }
 
 #multimedia-text{
