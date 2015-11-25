@@ -298,7 +298,6 @@
     padding-bottom: 15px;
 }
 .vista {
-    margin: 0 auto;
     width: 350px;
     height: 250px;
     float: center;
@@ -307,13 +306,14 @@
     text-align: center;
     cursor: default;
 }
-.vista .mascara{
-    width: 350px;
-    height: 234px;
+.mascara{
+    width: 330px;
+    height: 220px;
     position: absolute;
     overflow: hidden;
     top: 0px;
-    left: 0px;
+    left: 10px;
+    float: center;
 }
 .vista h2 {
     font-family: 'Josefin Sans', sans-serif;
@@ -361,34 +361,7 @@
     -ms-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
-.vista:hover .mascara { 
-    opacity: 1;
-    -webkit-transform: translate(0px, 0px);
-    -moz-transform: translate(0px, 0px);
-    -o-transform: translate(0px, 0px);
-    -ms-transform: translate(0px, 0px);
-    transform: translate(0px, 0px);
-    -webkit-transition-delay: 0s;
-    -moz-transition-delay: 0s;
-    -o-transition-delay: 0s;
-    -ms-transition-delay: 0s;
-    transition-delay: 0s;
-}
-.vista:hover h2 { 
-    -webkit-transform: translateY(0px); 
-    -moz-transform: translateY(0px); 
-    -o-transform: translateY(0px); 
-    -ms-transform: translateY(0px); 
-    transform: translateY(0px); 
-    -webkit-transition-delay: 0.5s;
-    -moz-transition-delay: 0.5s;
-    -o-transition-delay: 0.5s;
-    -ms-transition-delay: 0.5s;
-    transition-delay: 0.5s;
-}
-
-@media only screen and (max-width: 700px){
-    .vista .mascara { 
+.vista .mascara { 
     opacity: 1;
     -webkit-transform: translate(0px, 0px);
     -moz-transform: translate(0px, 0px);
@@ -412,7 +385,6 @@
     -o-transition-delay: 0.5s;
     -ms-transition-delay: 0.5s;
     transition-delay: 0.5s;
-}
 }
 
 #multimedia-text{
