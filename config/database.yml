@@ -8,6 +8,10 @@ default: &default
 #   gem 'sqlite3'
 development:
  adapter: postgresql
+ username: root
+ password: "1234"
+ host: localhost
+ database: diasan
  encoding: unicode
  pool: 5
  timeout: 5000
