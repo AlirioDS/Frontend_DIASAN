@@ -25,14 +25,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'owlcarousel-rails'
-gem 'haml'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'rails_12factor', group: :production
-gem 'rails_admin'
-gem 'devise'
-gem 'cancancan', '~> 1.10'
-gem 'paper_trail', '~> 4.0.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  
   post 'send' => 'send#create'
 
   # The priority is based upon order of creation: first created -> highest priority.
