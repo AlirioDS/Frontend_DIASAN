@@ -1,7 +1,17 @@
 <%= render "layouts/navigation" %>
 
-<section id= "home" class="light-typo">
+<section itemscope itemtype="http://schema.org/LocalBusiness" id= "home" class="light-typo">
   <%= render "home" %>
+
+  <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+  	<meta itemprop="addressLocality" content="Punto Fijo">
+  	<meta itemprop="addressRegion" content="Edo. Falcon">
+  	<meta itemprop="addressCountry" content="Venezuela"></span>
+  	<meta itemprop="name" content="DIASAN C.A.">
+  	<meta itemprop="telephone" content="02692466035">
+  	<meta itemprop="email" content="electrificacionesdiasan@gmail.com">
+  	<meta itemprop="url" content="http://www.diasan.com.ve/">
+
 </section>
 
 <section id="products" class="navbar-fixed">
