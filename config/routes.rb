@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  
-  post 'send' => 'send#create'
 
+  resources :contacts, only: [:create]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

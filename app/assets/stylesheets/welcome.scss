@@ -538,7 +538,7 @@ address{
 }
 
 .padding-top{
-    padding-top: 45px;
+    padding-top: 55px;
 }
 
 .padding-bottom{
@@ -571,6 +571,13 @@ address{
 .btn-block{
     display: block;
     width: 100%;
+}
+
+.notice{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: red;
 }
 //---------------END Contact------------------------
 

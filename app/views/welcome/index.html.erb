@@ -1,7 +1,7 @@
 <%= render "layouts/navigation" %>
 
 <section itemscope itemtype="http://schema.org/LocalBusiness" id= "home" class="light-typo">
-  <%= render "home" %>
+  <%= render partial: "welcome/home" %>
 
   <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
   	<meta itemprop="addressLocality" content="Punto Fijo">
@@ -15,21 +15,27 @@
 </section>
 
 <section id="products" class="navbar-fixed">
-  <%= render "products" %>
+  <%= render partial: "welcome/products" %>
 </section>
 
 <section id="services" class="navbar-fixed">
-  <%= render "services" %>
+  <%= render partial: "welcome/services" %>
 </section>
 
 <section id="us" class="navbar-fixed">
-  <%= render "us" %>
+  <%= render partial: "welcome/us" %>
 </section>
 
 <section id="contact" class="navbar-fixed">
-  <%= render "contact" %>
+  <%= render partial: "welcome/contact" %>
 </section>
 
 <footer id="mainfoot">
-  <%= render "mainfoot" %>
+  <%= render partial: "welcome/mainfoot" %>
 </footer>
+
+<%if controller_name == "contacts" %>
+  <script type="text/javascript">
+  window.location = '#contact';
+  </script>
+<%end%>
