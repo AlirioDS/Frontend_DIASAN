@@ -34,8 +34,32 @@
   <%= render partial: "welcome/mainfoot" %>
 </footer>
 
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Aviso de Entrega</h4>
+      </div>
+      <div class="modal-body">
+        <p>Su mensaje ha sido enviado con éxito, nos comunicaremos con usted a la brevedad posible. Gracias por contactarse con nosotros&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
 <%if controller_name == "contacts" %>
   <script type="text/javascript">
   window.location = '#contact';
+  </script>
+<%end%>
+
+<%if flash[:notice] == "Mensaje Enviado con Éxito" %>
+  <script type="text/javascript">
+    $('#myModal').modal('show');
   </script>
 <%end%>
